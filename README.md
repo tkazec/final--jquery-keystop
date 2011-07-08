@@ -8,9 +8,11 @@ Usage:
  - Trigger: `.keystop()` or `.trigger("keystop")`
  - Unbind: `.unbind("keystop")`
 
-	$("#search").keystop(function(){
-		// load and display search results via AJAX
-	});
+```javascript
+$("#search").keystop(function(){
+	// load and display search results via AJAX
+});
+```
 
 ---
 

@@ -3,9 +3,9 @@ A tiny jQuery plugin that adds the "keystop" event, which triggers when the user
 ----
 
 Usage:
- - Bind: `.keystop(callback, [delay])` or `.bind("keystop", [delay], callback)`
- - Trigger: `.keystop()` or `.trigger("keystop")`
- - Unbind: `.unbind("keystop")`
+* Bind: `.keystop(callback, [delay])` or `.bind("keystop", [delay], callback)`
+* Trigger: `.keystop()` or `.trigger("keystop")`
+* Unbind: `.unbind("keystop")`
 
 	$("#search").keystop(function(){
 		// load and display search results via AJAX

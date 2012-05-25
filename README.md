@@ -1,25 +1,19 @@
-A tiny jQuery plugin that adds the "keystop" event, which triggers when the user has stopped typing in an element for a certain amount of time.
+A tiny jQuery plugin that adds a "keystop" event which triggers once the user has stopped typing in an input for a specified period of time.
 
 ----
 
-Usage:
-
- - Bind: `.keystop(callback, [delay])` or `.bind("keystop", [delay], callback)`
- - Trigger: `.keystop()` or `.trigger("keystop")`
- - Unbind: `.unbind("keystop")`
+* Bind: `.keystop(callback, [delay])` or `.on("keystop", [delay], callback)`
+	* The delay is specified in milliseconds and defaults to 500.
+* Trigger: `.keystop()` or `.trigger("keystop")`
+* Unbind: `.off("keystop")`
+* Works with jQuery 1.7 and up.
 
 ```javascript
-$("#search").keystop(function(){
-	// load and display search results via AJAX
+$("#search").keystop(function () {
+	// Load and display search results via AJAX.
 });
 ```
 
 ---
 
->Copyright (c) 2011 Teddy Cross
-
->Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
->The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
->THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+© 2012 [Teddy Cross](http://tkaz.ec), shared under the [MIT](http://www.opensource.org/licenses/MIT).

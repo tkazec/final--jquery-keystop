@@ -1,0 +1,21 @@
+{
+	"name": "keystop",
+	"version": "1.1.0",
+	"title": "keystop",
+	"author": {
+		"name": "Teddy Cross",
+		"email": "me@tkaz.ec",
+		"url": "http://tkaz.ec"
+	},
+	"licenses": [{
+		"type": "MIT",
+		"url": "http://www.opensource.org/licenses/MIT"
+	}],
+	"jquery": {
+		"dependencies": {
+			"jquery": "1.7"
+		}
+	},
+	"description": "Adds a \"keystop\" event which triggers once the user has stopped typing in an input for a specified period of time.",
+	"homepage": "https://github.com/tkazec/keystop"
+}

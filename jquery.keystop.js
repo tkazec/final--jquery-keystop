@@ -9,18 +9,18 @@
 
 $.event.special.keystop = {
 	add: function (details) {
-		var $elem = $(this);
+		var $el = $(this);
 		var ns = ".__" + details.guid;
 		var delay = details.data || 500;
 		var tID = -1;
 		
 		details.namespace += ns;
 		
-		$elem.on("input" + ns + " propertychange" + ns, function () {
+		$el.on("input" + ns + " propertychange" + ns, function () {
 			clearTimeout(tID);
 			
 			tID = setTimeout(function () {
-				$elem.trigger("keystop" + ns);
+				$el.trigger("keystop" + ns);
 			}, delay);
 		});
 	},

@@ -1,11 +1,13 @@
-A tiny jQuery plugin that adds a "keystop" event which triggers once the user has stopped typing in an input for a specified period of time.
+> Created in the heyday of jQuery, AJAX, and IE8, this microplugin was a convenient cross-browser way to improve UX. The final source code is preserved here, dedicated to the public domain under the [CC0 1.0 license](https://creativecommons.org/publicdomain/zero/1.0/). – [Teddy Cross](https://teddy.io)
+
+jQuery keystop event plugin. Triggers the "keystop" event once the user has ceased typing in an input for a specified period of time. https://www.npmjs.com/package/jquery-keystop
 
 ----
 
-* Bind: `.keystop(callback, [delay])` or `.on("keystop", [delay], callback)`
+* `.keystop(handler, [delay])` or `.on("keystop", [delay], handler)` to bind.
 	* The delay is specified in milliseconds and defaults to 500.
-* Trigger: `.keystop()` or `.trigger("keystop")`
-* Unbind: `.off("keystop")`
+* `.keystop()` or `.trigger("keystop")` to trigger.
+* `.off("keystop")` to unbind.
 * Works with jQuery 1.7 and up.
 
 ```javascript
@@ -13,7 +15,3 @@ $("#search").keystop(function () {
 	// Load and display search results via AJAX.
 });
 ```
-
----
-
-© 2014 [Teddy Cross](http://tkaz.ec), shared under the [MIT license](http://www.opensource.org/licenses/MIT).

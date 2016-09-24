@@ -1,5 +1,5 @@
 /*\
- * jQuery keystop plugin (https://github.com/tkazec/keystop)
+ * jQuery keystop plugin (https://github.com/tkazec/final--jquery-keystop)
  * (c) 2014 Teddy Cross (http://tkaz.ec), shared under the MIT license (http://opensource.org/licenses/MIT)
  *
  * Adds a "keystop" event which triggers once the user has stopped typing in an input for a specified period of time.
